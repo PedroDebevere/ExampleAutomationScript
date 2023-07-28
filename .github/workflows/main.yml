@@ -56,7 +56,7 @@ jobs:
                myfile.write("lowerCaseOwner=" + str.lower("${{ inputs.owner }}"))
         shell: python     
       - name: Building
-        run: dotnet build -p:DefineConstants="DCFv1%3BDBInfo%3BALARM_SQUASHING" --configuration Release -nodeReuse:false
+        run: dotnet build -p:DefineConstants="DCFv1%3BDBInfo%3BALARM_SQUASHING" --configuration Release -nodeReuse:false -v d
       - name: Unit Tests
         id: unit-tests
         run: dotnet test --filter TestCategory!=IntegrationTest --logger "trx;logfilename=unitTestResults.trx" --collect "XPlat Code Coverage" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura,opencover

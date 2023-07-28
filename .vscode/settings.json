@@ -1,3 +1,4 @@
 {
-    "dotnet.defaultSolution": "ExampleAutomationScript.sln"
+    "dotnet.defaultSolution": "ExampleAutomationScript.sln",
+    "coverage-gutters.coverageReportFileName": ".coverage/**/index.html"
 }
