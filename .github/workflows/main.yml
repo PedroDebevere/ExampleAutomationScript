@@ -1,41 +1,14 @@
 name: Automation script Workflow
 
 # Controls when the workflow will run
-on:
-  # Allows you to run this workflow from another workflow
-  workflow_call:
-    outputs:
-      quality_gate: 
-        description: "Results from Skyline Quality Gate."
-        value:  ${{ jobs.validate_skyline_quality_gate.outputs.quality}}
-      artifact-id: 
-        description: "Artifact ID of uploaded Package if successful."
-        value:  ${{ jobs.artifact_creation_registration.outputs.artifact-id }}
-    inputs:
-      referenceName:
-        required: true
-        type: string       
-      runNumber:
-        required: true
-        type: string   
-      referenceType:
-        required: true
-        type: string   
-      repository:
-        required: true
-        type: string 
-      owner:
-        required: true
-        type: string
-      sonarCloudProjectName:
-        required: true
-        type: string
-    secrets:
-      api-key:
-        required: true
-      sonarCloudToken:
-        required: true
 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: []
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+.[0-9]+"
+      - "[0-9]+.[0-9]+.[0-9]+.[0-9]+-**"
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   validate_skyline_quality_gate:
