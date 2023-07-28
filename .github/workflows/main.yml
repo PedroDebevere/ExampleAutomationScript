@@ -41,8 +41,6 @@ jobs:
   validate_skyline_quality_gate:
     name: Skyline Quality Gate 
     runs-on: ubuntu-latest
-    env:
-      detected-unit-tests: none
     outputs:
       quality: ${{ steps.quality-step.outputs.results}}
     steps:
