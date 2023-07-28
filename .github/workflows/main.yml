@@ -59,7 +59,7 @@ jobs:
         run: dotnet build -p:DefineConstants="DCFv1%3BDBInfo%3BALARM_SQUASHING" --configuration Release -nodeReuse:false
       - name: Unit Tests
         id: unit-tests
-        run: dotnet test --filter TestCategory!=IntegrationTest --logger \"trx;logfilename=unitTestResults.trx\" --collect \"XPlat Code Coverage\" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura,opencover
+        run: dotnet test --filter TestCategory!=IntegrationTest --logger \"trx;logfilename=unitTestResults.trx\" # --collect \"XPlat Code Coverage\" -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura,opencover
         continue-on-error: true
       - name: Get SonarCloud Status
         id: get-sonarcloud-status
