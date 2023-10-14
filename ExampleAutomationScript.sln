@@ -46,7 +46,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{AFD1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleScript_1", "ExampleScript_1\ExampleScript_1.csproj", "{46C83A52-1A3D-4578-942B-A765E5648444}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleScript_1Tests", "ExampleScript_1Tests\ExampleScript_1Tests.csproj", "{FDEA8486-D55E-4C57-BE43-3F107918C2D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleScript_1Tests", "ExampleScript_1Tests\ExampleScript_1Tests.csproj", "{FDEA8486-D55E-4C57-BE43-3F107918C2D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +72,7 @@ Global
 		{6CD321DF-3680-4DD9-8A46-755B78C25D2A} = {2E8EA8FB-B74D-461E-8560-B0FC9D70C9F7}
 		{AFD1EBC5-6126-4251-8161-5732A4D7514F} = {6CD321DF-3680-4DD9-8A46-755B78C25D2A}
 		{46C83A52-1A3D-4578-942B-A765E5648444} = {AFD1EBC5-6126-4251-8161-5732A4D7514F}
+		{FDEA8486-D55E-4C57-BE43-3F107918C2D1} = {F8938D60-51A0-4880-9CFC-19C66379BB5D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {216420D0-06D6-4FAF-B958-3314C7ED03F6}

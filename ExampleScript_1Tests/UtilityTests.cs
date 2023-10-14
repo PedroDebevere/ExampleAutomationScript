@@ -10,7 +10,7 @@ namespace ExampleScript_1.Tests
 	public class UtilityTests
 	{
 		[TestMethod()]
-		public void ToUpperTest()
+		public void ExampleTestMethod()
 		{
 			// Arrange
 			var engine = new Mock<IEngine>();
