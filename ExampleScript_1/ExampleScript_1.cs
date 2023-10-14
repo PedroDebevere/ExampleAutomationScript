@@ -23,9 +23,12 @@ namespace ExampleScript_1
 
 	public class Utility
 	{
-		public static string ToUpper(string input)
+		public static string ToUpper(string input, IEngine engine)
 		{
-			return input.ToUpper();
+			var result = input.ToUpper();
+			engine.GenerateInformation(result);
+
+			return result;
 		}
 	}
 }
