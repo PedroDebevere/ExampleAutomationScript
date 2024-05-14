@@ -27,7 +27,7 @@ jobs:
           echo "repository" ${{ inputs.repository }}
       - name: Push to Marketplace
         shell: pwsh
-        run: "'C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VSSDK\\VisualStudioIntegration\\Tools\\Bin\\VsixPublisher.exe' publish -payload \"DataMinerIntegrationStudio17_2.48.0.3175.vsix\" -publishManifest \"publishManifest.json\"  -personalAccessToken \"\""
+        run: "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VSSDK\\VisualStudioIntegration\\Tools\\Bin\\VsixPublisher.exe\" publish -payload \"DataMinerIntegrationStudio17_2.48.0.3175.vsix\" -publishManifest \"publishManifest.json\"  -personalAccessToken \"\""
     
       # - name: Set up JDK
       #   uses: actions/setup-java@v3
